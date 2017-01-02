@@ -1,6 +1,6 @@
 <html>
 	<head>
-		<title> Wich Is Greater/less</title>
+		<title> Which Is Greater/less</title>
 		<link rel="stylesheet" type="text/css" href="finders.css">
 	</head>
 	<body>
@@ -19,8 +19,8 @@
 					Enter Third Number: <input type="text" id="number3TextBox">
 				</div>
 				<div class="control">
-					<input type="button" value="Find wich is greater" onClick="findwichisgreater()">
-					<input type="button" value="Find wich is less" onClick="findwichisless()">
+					<input type="button" value="Find which is greatest" onClick="findwhichisgreatest()">
+					<input type="button" value="Find which is least" onClick="findwhichisleast()">
 				</div>
 				<div class="result"> 
 					<span id="result"></span>
@@ -31,7 +31,7 @@
     </div>
 </div>
 			<script type="text/javascript">
-				function findwichisgreater() {
+				function findwhichisgreatest() {
 					var n1 = parseInt(document.getElementById("numberTextBox").value);
 					var n2 = parseInt(document.getElementById("number2TextBox").value);
 					var n3 = parseInt(document.getElementById("number3TextBox").value);
@@ -54,6 +54,32 @@
                     	}
                     }  
 				} 
+			
+function findwhichisleast() {
+					var n1 = parseInt(document.getElementById("numberTextBox").value);
+					var n2 = parseInt(document.getElementById("number2TextBox").value);
+					var n3 = parseInt(document.getElementById("number3TextBox").value);
+
+					if (n1 < n2) {
+	                    if (n1 < n3) {
+	                    	document.getElementById('result').innerHTML = "The least number is " + n1
+	                    }  
+	                    else {
+	                    	document.getElementById('result').innerHTML = "The least number is " + n3
+	                    }
+                    
+					} else {
+
+						if (n2 < n3) {
+							document.getElementById('result').innerHTML = "The least number is " + n2
+						} 
+                    	else {
+                    		document.getElementById('result').innerHTML = "The least number is " + n3
+                    	}
+                    }  
+				} 
+
+
 			</script>
 		 
 	</body>
