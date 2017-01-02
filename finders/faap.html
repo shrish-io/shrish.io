@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <title> Area And Perimiter Finder</title>
+    <link rel="stylesheet" type="text/css" href="finders.css">
+  </head>
+  <body>
+    <div>
+      <div class="content">
+        <fieldset>
+          <legend>
+            Area and Perimeter Calculator
+          </legend>
+          
+          <div class="input">
+            Length: <input type="text" id="lengthTextBox">
+          </div>
+          <div class="input">
+            Width: <input type="text" id="widthTextBox">
+          </div>
+          <div class="control">
+            <input type="button" value="Find area" onClick="findarea()">
+            <input type="button" value="Find perimiter" onClick="findperimiter()">
+          </div>
+          <div class="result">
+            <span id="resultSpan"></span>
+          </div>
+        </fieldset>
+        <div class="back">
+        <a href="index.html">Back to Finder Projects</a>
+      </div>
+  </div>
+        <script type="text/javascript">
+          function findarea() {
+            var legthVariable = parseInt(document.getElementById("lengthTextBox").value);
+            var widthVariable = parseInt(document.getElementById("widthTextBox").value);
+            var area = legthVariable * widthVariable ;
+            document.getElementById("resultSpan").innerHTML = "The Area Is " + area;
+          }
+
+          function findperimiter() {
+            var legthVariable = parseInt(document.getElementById("lengthTextBox").value);
+            var widthVariable = parseInt(document.getElementById("widthTextBox").value);
+            var perimiter = (legthVariable + widthVariable)*2 ;
+            document.getElementById("resultSpan").innerHTML = "The Perimiter Is " + perimiter;
+          }
+
+        </script> 
+     
+  </body>
+</html
+

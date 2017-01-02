@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<title> Word Length Finder</title>
+		<link rel="stylesheet" type="text/css" href="finders.css">
+	</head>
+	<body>
+		<div class="content">
+			<fieldset>
+	          	<legend>
+					Word Length Finder
+				</legend>
+	      
+				<div class="input">
+				 	Enter a Word: <input type="text" id="wordTextBox">
+				</div>
+				<div class="control">
+				 	<input type="button" value="find length of word" onClick="Findlengthofword()">
+				</div>
+				<div class="result">
+					Your Word Length Is: <span id="lengthSpan"></span>
+				</div>
+			</fieldset>
+			    <div class="back">
+      <a href="index.html">Back to Finder Projects</a>
+    </div>
+</div>
+			<script type="text/javascript">
+				function Findlengthofword() {
+					var wordVariable = document.getElementById("wordTextBox").value;
+					var length = wordVariable.length;
+					document.getElementById("lengthSpan").innerHTML = length;
+				}
+			</script>  
+		  
+	</body>	 
+</html> 	

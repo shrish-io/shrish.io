@@ -1,0 +1,12 @@
+body {
+
+}
+
+.content {
+	margin: auto;
+	width: 400px;
+	background-color: #eeeeee;
+	padding: 2em;
+	border-radius: 2em;
+	margin-top: 2em;
+}

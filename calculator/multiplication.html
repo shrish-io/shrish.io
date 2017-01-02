@@ -1,0 +1,32 @@
+<html>
+	<head>
+		<title> </title>
+    <link rel="stylesheet" type="text/css" href="calculator.css">
+	</head>
+  
+<body>
+  <div class="content">
+<fieldset>
+    <legend>Multiply Calculator Up To 2 Numbers</legend>
+    <div class="input">E:  <input type="text" id="E" value=""/></div>
+    <div class="input">F:  <input type="text" id="F" value="" /></div> 
+    <div class="control">
+      <input type="button" value="Multiply" onClick="multiply()">
+    </div>
+    <div class="result">E x F = <span id="product"></span></div>
+  </fieldset> 
+    <div class="back">
+      <a href="index.html">Back to Calculator Projects</a>
+    </div>
+</div>
+  <script type="text/javascript">
+  function multiply() {
+  	 var E = parseInt(document.getElementById("E").value);
+	  var F = parseInt(document.getElementById("F").value);
+	  var proElement = document.getElementById("product");
+	  proElement.innerHTML = E*F;
+  }
+  </script>  
+
+  </body>
+</html>
