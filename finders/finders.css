@@ -1,0 +1,48 @@
+body {
+}
+
+.content {
+	margin: auto;
+	width: 400px;
+	background-color: #eeeeee;
+	padding: 2em;
+	border-radius: 2em;
+	margin-top: 2em;
+}
+
+.back a:link, .back a:visited { 
+	background-color:#cccccc;
+    text-decoration: none;
+    cursor: auto;
+    padding: .5em;
+	display: inline-block;
+	border-radius: 2em;
+}
+
+.back a:hover{ 
+    background-color:#aaaaaa;
+}
+
+fieldset {
+	margin:2em;
+	padding: 2em;
+	display: inline-block;
+}
+.input {
+	padding:.5em;
+}
+.control {
+	padding:.5em;
+}
+.result {
+	padding:.5em;
+}
+.result span{
+	background-color:green;
+	color: white;
+	padding:.2em;
+	border-radius: .2em;
+}
+fieldset legend {
+	font-weight: bold;
+}

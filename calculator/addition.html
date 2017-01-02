@@ -1,0 +1,32 @@
+<html>
+	<head>
+		<title></title>
+    <link rel="stylesheet" type="text/css" href="calculator.css">
+	</head>
+<body>
+  <div class="content">
+
+  <fieldset>
+    <legend>Addition Calculator Up To 2 Numbers</legend>
+    <div class="input">A:  <input type="text" id="A" value=""/></div>
+    <div class="input">B:  <input type="text" id="B" value="" /></div> 
+    <div class="control">
+      <input type="button" value="Add" onClick="add()">
+    </div>
+    <div class="result">A + B = <span id="sum"></span></div>
+  </fieldset> 
+    <div class="back">
+      <a href="index.html">Back to Calculator Projects</a>
+    </div>
+</div>
+  <script type="text/javascript">
+  function add() {
+  	  var A = parseInt(document.getElementById("A").value);
+	  var B = parseInt(document.getElementById("B").value);
+	  var sumElement = document.getElementById("sum");
+	  sumElement.innerHTML = A+B;
+  }
+  </script>   
+
+</body>
+</html>

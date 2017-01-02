@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<title> </title>
+    <link rel="stylesheet" type="text/css" href="calculator.css">
+	</head>
+<body>
+  <div class="content">
+<fieldset>
+    <legend>Subtraction Calculator Up To 2 Numbers</legend>
+    <div class="input">C:  <input type="text" id="C" value=""/></div>
+    <div class="input">D:  <input type="text" id="D" value="" /></div> 
+    <div class="control">
+      <input type="button" value="Subtract" onClick="subtract()">
+    </div>
+    <div class="result">C - D = <span id="difference"></span></div>
+  </fieldset> 
+    <div class="back">
+      <a href="index.html">Back to Calculator Projects</a>
+    </div>
+</div>
+  <script type="text/javascript">
+  function subtract() {
+  	  var C = parseInt(document.getElementById("C").value);
+	  var D = parseInt(document.getElementById("D").value);
+	  var diffElement = document.getElementById("difference");
+	  diffElement.innerHTML = C-D;
+  }
+  </script>  
+ 
+</body>
+</html>

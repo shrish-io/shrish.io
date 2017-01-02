@@ -1,0 +1,40 @@
+<html>
+	<head>
+		<title> Even Or Odd</title>
+		<link rel="stylesheet" type="text/css" href="finders.css">
+	</head>
+	<body>
+		<div class="content">
+			<fieldset>
+	          	<legend>
+					Odd or Even Number Finder
+				</legend>
+				<div class="input">
+					Enter the number: <input type="text" id="numberTextBox">
+				</div>
+				<div class="control">
+					<input type="button" value="Find if even or odd" onClick="findifevenorodd()">
+				</div>
+				<div class="result">
+					The Number is: <span id="evenoroddSpan"></span>
+				</div>
+			</fieldset>
+			    <div class="back">
+      <a href="index.html">Back to Finder Projects</a>
+    </div>
+</div>
+			<script type="text/javascript">
+				function findifevenorodd() {
+					var numberVariable = parseInt(document.getElementById("numberTextBox").value);
+					var evenorodd = numberVariable % 2;
+					
+					if (evenorodd == 0) {
+						document.getElementById('evenoroddSpan').innerHTML = "Even";
+					} else {
+						document.getElementById('evenoroddSpan').innerHTML = "Odd";
+					}       
+				} 
+			</script> 
+		  
+	</body>
+</html>          

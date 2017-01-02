@@ -1,0 +1,59 @@
+<html>
+	<head>
+		<title> Wich Is Greater/less</title>
+		<link rel="stylesheet" type="text/css" href="finders.css">
+	</head>
+	<body>
+		<div class="content">
+			<fieldset>
+	          	<legend>
+					Greater and smaller number Finder
+				</legend>
+				<div class="input">
+					Enter First Number: <input type="text" id="numberTextBox">
+				</div>
+				<div class="input">
+					Enter Second Number: <input type="text" id="number2TextBox">
+				</div>
+				<div class="control">
+					<input type="button" value="Find wich is greater" onClick="findwichisgreater()">
+					<input type="button" value="Find wich is less" onClick="findwichisless()">
+				</div>
+				<div class="result"> 
+					<span id="result"></span>
+				</div>
+			</fieldset>
+			    <div class="back">
+      <a href="index.html">Back to Finder Projects</a>
+    </div>
+</div>
+			<script type="text/javascript">
+				function findwichisgreater() {
+					var numberVariable = parseInt(document.getElementById("numberTextBox").value);
+					var number2Variable = parseInt(document.getElementById("number2TextBox").value);
+					
+					if (number2Variable > numberVariable) {
+						document.getElementById('result').innerHTML = "The Greater Number Is " + number2Variable;
+					} else if (numberVariable > number2Variable){
+						document.getElementById('result').innerHTML = "The Greater Number Is " + numberVariable;
+					} else if (number2Variable == numberVariable)  {
+						document.getElementById('result').innerHTML = "Both Numbers Are The Same";
+					}  
+				} 
+				  
+				function findwichisless() {
+					var numberVariable = parseInt(document.getElementById("numberTextBox").value);
+					var number2Variable = parseInt(document.getElementById("number2TextBox").value);
+					
+					if (number2Variable > numberVariable) {
+						document.getElementById('result').innerHTML = "The Smaller Number Is " + numberVariable;
+					} else if (numberVariable > number2Variable){
+						document.getElementById('result').innerHTML ="The Smaller Number Is " + number2Variable; 
+					} else if (number2Variable == numberVariable)  {
+						document.getElementById('result').innerHTML = "Both Numbers Are The Same";
+					}  
+				} 
+			</script>
+		
+	</body>
+</html>
