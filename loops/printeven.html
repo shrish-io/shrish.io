@@ -1,0 +1,64 @@
+<html>
+<head>
+    <title> </title>
+    <link rel="stylesheet" type="text/css" href="../shrish-io.css">
+</head>
+<body>
+
+
+
+
+<div class="content">
+    <fieldset>
+        <legend>
+            Enter A Number And Get That Much Even/Odd Numbers
+        </legend>
+
+        <div class="input">
+            Please Enter A Number: <input type="text" id="numberTextBox">
+        </div>
+        <div class="control">
+            <input type="button" value="print that much even numbers" onClick="printthatmuchevennumbers()">
+            <input type="button" value="print that much odd numbers" onClick="printthatmuchoddnumbers()">
+        </div>
+        <div class="result">
+            Even numbers: <span id="ENDiv">   </span>
+            Odd numbers: <span id="ONDiv">   </span>
+        </div>
+    </fieldset>
+    <div class="back">
+        <a href="index.html">Back to Loop Projects</a>
+    </div>
+</div>
+
+    <script type="text/javascript">
+            function printthatmuchevennumbers() {
+                var nV = parseInt(document.getElementById("numberTextBox").value);
+                if(nV > 100000) {
+                    document.getElementById("ENDiv").innerHTML = "Too big of a number";
+                    return;
+                }
+                var qwer = "";
+                for (var i = 0; i < nV; i = i + 2) {
+                   qwer = qwer + i + ", ";
+                }
+                document.getElementById("ENDiv").innerHTML = qwer;
+            }
+        </script>
+
+    <script type="text/javascript">
+    function printthatmuchoddnumbers() {
+        var nV = parseInt(document.getElementById("numberTextBox").value);
+        if(nV > 100000) {
+            document.getElementById("ONDiv").innerHTML = "Too big of a number";
+            return;
+        }
+        var qwer = "";
+        for (var i = 1; i < nV; i = i + 2) {
+            qwer = qwer + i + ", ";
+        }
+        document.getElementById("ONDiv").innerHTML = qwer;
+    }
+    </script>
+</body>
+</html>

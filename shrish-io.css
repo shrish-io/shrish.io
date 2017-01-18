@@ -5,8 +5,53 @@ body {
 .content {
 	margin: auto;
 	width: 400px;
-	background-color: #eeeeee;
+	background-color:goldenrod;
+	color:white;
 	padding: 2em;
 	border-radius: 2em;
 	margin-top: 2em;
+	font-family: sans-serif;
+}
+
+.back a:link, .back a:visited {
+	background-color:lightgoldenrodyellow;
+	text-decoration: none;
+	cursor: auto;
+	padding: .5em;
+	display: inline-block;
+	border-radius: 2em;
+}
+
+.back a:hover{
+	background-color:darkgoldenrod;
+}
+
+fieldset {
+	margin:2em;
+	padding: 5em;
+	display: block;
+}
+.input {
+	padding:.5em;
+}
+.control {
+	padding:.5em;
+}
+.result {
+	padding:.5em;
+}
+
+.result span {
+	width: 160px;
+	display:block;
+	overflow-wrap: normal;
+}
+.result span{
+	background-color:black;
+	color: white;
+	padding:.1em;
+	border-radius: .2em;
+}
+fieldset legend {
+	font-weight: bold;
 }
